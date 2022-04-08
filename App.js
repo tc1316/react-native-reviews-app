@@ -2,6 +2,7 @@ import * as Font from "expo-font";
 
 import AppLoading from "expo-app-loading";
 import Home from "./screens/Home";
+import Navigator from "./routes/homeStack";
 
 export default function App() {
   const [fontsLoaded] = Font.useFonts({
@@ -13,5 +14,5 @@ export default function App() {
     return <AppLoading />;
   }
 
-  return <Home />;
+  return <Navigator />;
 }
